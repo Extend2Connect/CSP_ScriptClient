@@ -1,0 +1,28 @@
+{
+
+  "manifest_version": 2,
+  "name": "CSP mozextension:// script client error demo",
+  "version": "0.1.1",
+
+  "applications": {
+    "gecko": {
+      "id": "CSP_MozExtension_ScriptClient@FocusZilla.github.io",
+      "strict_min_version": "57.0a1"
+    }
+  },
+  
+"description": "Error demo that loads a .js from another extension.",
+
+"background": {
+  "scripts": ["background.js"]
+},
+
+"permissions": [
+  
+],
+
+"content_security_policy": "script-src 'self'; object-src 'self';",
+
+"author": "Peter Kehl"
+
+}
